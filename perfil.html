@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EcoBarrio - Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assests/styles/landing.css">
+</head>
+<body>
+
+    <header class="main-header">
+        
+        <a href="landing.html" class="logo-container">
+            <img class="logo" src="assests/images/logoo-mu.png" alt="Logo EcoBarrio">
+        </a>
+
+        <div class="search-bar-container">
+            <input type="text" class="search-input" placeholder="Buscar reportes...">
+            <button class="search-button">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        
+        <button id="abrir" class="abrir-menu" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
+        
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar" aria-label="Cerrar menú"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="landing.html">Inicio</a></li>
+                <li><a href="report.html">Reportar Punto</a></li>
+                <li><a href="search.html">Buscar Reportes</a></li>
+                <li><a href="community.html">Comunidad</a></li>
+                <li><a href="education.html">Educación</a></li>
+                <li><a href="perfil.html" class="login-link"><i class="bi bi-person-circle"></i> Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            
+            <section class="profile-card-edit">
+                <div class="profile-header">
+                    <i class="bi bi-person-circle profile-avatar"></i>
+                    <h2>Hola, Benjamin</h2>
+                    <p>Vecino Activo</p>
+                </div>
+
+                <form id="form-perfil">
+                    <h3>Gestión de Perfil</h3>
+                    
+                    <div class="form-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" value="Benjamin" id="nombre-usuario">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" value="benjamin@ecobarrio.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" value="********">
+                        <button type="button" class="btn-small" onclick="alert('Te hemos enviado un correo para cambiar tu clave.')">Cambiar</button>
+                    </div>
+
+                    <button type="button" class="cta-button full-width" onclick="guardarPerfil()">Guardar Cambios</button>
+                </form>
+            </section>
+
+            <section class="notifications-card">
+                <h3>Centro de Notificaciones</h3>
+                <ul class="notification-list">
+                    <li class="notif-item unread">
+                        <div>
+                            <strong>Reporte Atendido</strong>
+                            <p>Tu reporte #452 en Parque Kennedy ha sido limpiado.</p>
+                            <small>Hace 2 horas</small>
+                        </div>
+                    </li>
+                    <li class="notif-item">
+                        <div>
+                            <strong>Campaña de Reciclaje</strong>
+                            <p>Mañana pasaremos recogiendo vidrio por tu zona.</p>
+                            <small>Ayer</small>
+                        </div>
+                    </li>
+                    <li class="notif-item">
+                        <div>
+                            <strong>¡Nivel Subido!</strong>
+                            <p>Ahora eres un "Vecino Responsable".</p>
+                            <small>Hace 3 días</small>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            
+            <div class="footer-brand">
+                <img src="assests/images/certificado dundi ian.png" alt="Logo EcoBarrio" class="footer-logo" />
+                <p>EcoBarrio</p>
+                <small>© 2025 Todos los derechos reservados</small>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="assests/images/TerminosYCondiciones.pdf" target="_blank">Política de Privacidad</a>
+                <a href="assests/images/TerminosYCondiciones.pdf" target="_blank">Términos y Condiciones</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook logo.png" alt="Facebook" class="social-icon" /></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram logo.png" alt="Instagram" class="social-icon" /></a>
+                    <a href="https://pe.linkedin.com" target="_blank"><img src="assests/images/linkedin logo.png" alt="LinkedIn" class="social-icon" /></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="assests/images/youtube logo.png" alt="YouTube" class="social-icon" /></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assests/scrips/menuamburguesa.js"></script>
+    <script src="assests/scrips/busqueda.js"></script>
+</html>
